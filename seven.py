@@ -3,7 +3,7 @@ def find_cube_pairs(target):
     max_num = round(target ** (1/3))  
 
     for a in range(1, max_num + 1):
-        for b in range(a, max_num + 1):  # Start from 'a' to avoid duplicates
+        for b in range(a, max_num + 1):  
             if a**3 + b**3 == target:
                 solutions.append((a, b))
     return solutions
